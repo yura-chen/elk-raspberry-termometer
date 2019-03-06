@@ -9,6 +9,22 @@ Run the latest version of the [Elastic stack](https://www.elastic.co/elk-stack) 
 It will give you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticsearch
 and the visualization power of Kibana.
 
+## Install the Docker client
+
+```bash
+curl -sSL https://get.docker.com | sh
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker pi
+docker ps
+```
+
+## Install the Docker-compose client
+```
+sudo pip install docker-compose
+```
+
+
 Based on the official Docker images from Elastic:
 
 * [elasticsearch](https://github.com/elastic/elasticsearch-docker)
